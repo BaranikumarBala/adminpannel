@@ -1,0 +1,10 @@
+.chart-container
+{
+    width:480px;
+    height:350px;
+}
+.chart-container h1
+{
+    color:#fff;
+    font-size: 18px;
+}

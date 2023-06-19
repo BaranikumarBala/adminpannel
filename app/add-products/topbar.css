@@ -1,0 +1,140 @@
+.navbar
+{
+    height:100px;
+    background-color: #567086;
+    padding:0;
+}
+.navbar-container
+{
+    height:100%;
+    display:flex;
+    margin:0 8%;
+    /* justify-content: space-between; */
+}
+.navbar-left
+{
+    display: flex;
+    align-items: center;
+    flex:0.3;
+    /* border:1px solid yellow; */
+}
+.navbar-brand
+{
+    display: flex;
+    align-items: center;
+    color:#fff;
+    background-color: transparent;
+    cursor: pointer;
+    justify-content: center;
+}
+.brand
+{
+    text-transform: uppercase;
+    font-size:20px ;
+}
+.navbar-right
+{
+    /* display: flex; */
+    flex:0.5;
+    align-items: center;
+    /* border:1px solid red; */
+}
+.navbar-menu
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100%;
+}
+.menu-item
+{
+    list-style: none;
+    display: flex;
+    color:#fff;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;   
+    transition: .6s;
+    height:100%;
+    min-width:120px;
+    justify-content: center;
+}
+.menu-item:hover, .logout a:hover
+{
+    color:#f5a623;
+}
+.icons
+{
+    font-size: 25px;
+    /* text-align: center; */
+}
+.logout
+{
+    flex:0.2;
+    display: flex;
+    justify-content:right;
+    align-items: center;
+}
+.logout a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 14px;
+    transition: 0.6s;
+    /* margin-top:50px; */
+}
+.logout a span
+{
+    font-weight: 700;
+}
+.menu-click
+{
+    color:#fff;
+    position: relative;
+    display: none;
+}
+.menu-click:hover .menu-click-ul
+{
+    display: block;
+}
+.menu-click-ul
+{
+    /* border: 1px solid rgb(17, 233, 35); */
+    display: none;
+    bottom: -60px;
+    width: 120px;
+    list-style: none;
+    position: absolute;
+    background-color: #567086;
+}
+.menu-click-ul-li
+{
+    margin-bottom:2px;
+    color:#fff;
+    text-align: center;
+    border:1px solid black;
+}
+.menu-click-ul-li:hover
+{
+    color:#f5a623;
+}
+
+
+@media screen and (max-width:915px) 
+{
+    .menu-icon
+    {
+        display: none;
+    }
+    .menu-click
+    {
+        display:block;
+    }
+    .navbar-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}

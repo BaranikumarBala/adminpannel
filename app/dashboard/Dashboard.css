@@ -1,0 +1,93 @@
+.container
+{
+    /* border:2px solid white; */
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.welcomeBox
+{
+    /* border:1px solid black; */
+    display: flex;
+    margin:30px 8%;
+    align-items: center;
+    
+}
+.welcomeBox span
+{
+    color:#fff;
+    font-size: 16px;    
+}
+.welcomeBox h1
+{
+    color:#fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.charts
+{
+    /* border:1px solid yellow; */
+    margin:30px 8%;
+    display:flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.lateshits-chart, .performance-chart, 
+.storage-chart, .notification-chart
+{
+    width:43%;
+    height:300px;
+    /* flex: 0.5; */
+    /* border:2px solid orange; */
+    margin-bottom:22px;
+    display: flex;
+    background-color: #435c70;
+    padding:30px;
+    overflow: hidden;
+}
+.table-data
+{
+    width:100%;
+    /* border:2px solid orange; */
+    margin-bottom:35px;
+    display: flex;
+}
+.logout
+{
+    flex:0.2;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    display: block;
+}
+
+@media screen and (max-width:915px) 
+{
+    .charts {
+        /* border: 1px solid yellow; */
+        margin: 30px 8%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column;
+        width:100%;
+    }
+    .container {
+        /* border: 2px solid white; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .lateshits-chart, .performance-chart, .storage-chart, .notification-chart {
+        width: 100%;
+        height: 300px;
+        /* flex: 0.5; */
+        /* border: 2px solid orange; */
+        margin-bottom: 22px;
+        display: flex;
+        background-color: #435c70;
+        padding: 30px;
+        overflow: hidden;
+    }
+}
